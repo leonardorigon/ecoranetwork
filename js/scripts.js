@@ -56,4 +56,17 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+    //slider code
+    const sliderContainer = document.getElementById('slider');
+    const slides = sliderContainer.querySelectorAll('.slide');
+    var slideIndex = 0;
+
+    function changeSlide() {
+        slides[slideIndex].classList.remove('active');
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides[slideIndex].classList.add('active');
+    }
+
+    setInterval(changeSlide, 10000); //change the slide every 10 seconds
+
 });

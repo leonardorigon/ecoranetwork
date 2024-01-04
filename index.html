@@ -17,6 +17,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/scripts.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,30 +39,57 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Ecora Network</h1>
-                        <hr class="divider" />
+                        <h1 class="text-dark font-weight-bold">Ecora Network</h1>
+                        <!--<hr class="divider" />-->
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Empowering natures for companies</p>
+                        <p class="text-dark mt-5">Ecora Network è un ecosistema di competenze composto da professionisti che si occupano di consulenza organizzativa, coaching e formazione aziendale. Siamo guidati dalla profonda convinzione che le persone esprimano il proprio valore attraverso la rete di relazioni in cui sono inserite e che l’azienda sia un luogo privilegiato per la crescita personale e l’autorealizzazione.</p>
                         <!--<a class="btn btn-primary btn-xl" href="#about">Scopri di pi&ugrave;</a>-->
                     </div>
                 </div>
             </div>
         </header>
+        <section class="page-section slider" id="slider">
+            <div class="container gx-4 gx-lg-5 justify-content-center slider-content">
+                <div class="slide active">
+                    <img class="slide-image" src="./assets/img/image1.png" alt="Image 1">
+                    <div class="slide-text">
+                        <h2 class="mb-4">"In Natura tutto parla, nonostante il suo apparente silenzio"</h2>
+                        <p>Hazrat Inayat Khan</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img class="slide-image" src="./assets/img/image2.png" alt="Image 2">
+                    <div class="slide-text">
+                        <h2 class="mb-4">"Ogni cosa che puoi immaginare, la Natura l'ha già creata"</h2>
+                        <p>Albert Einstein</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img class="slide-image" src="./assets/img/image3.png" alt="Image 3">
+                    <div class="slide-text text-black mt-5">
+                        <h2 class="mt-5 mb-4">"Siate attraverso le vostre azioni, l'albero sacro dei vostri valori"</h2>
+                        <p>Maestro Zen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Fire-->
         <section class="page-section fire" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/fire.png" class="img-fluid">-->
-                        <h2 class="text-dark mt-0">Il Fuoco che ci unisce</h2>
-                        <hr class="divider divider-dark" />
-                        <p class="text-dark mb-4">Ecora Network è un ecosistema di competenze composto da professionisti che si occupano di consulenza organizzativa, coaching e formazione aziendale. Siamo guidati dalla profonda convinzione che le persone esprimano il proprio valore attraverso la rete di relazioni in cui sono inserite e che l’azienda è sia un luogo privilegiato per la crescita personale e l’autorealizzazione</p>
-                        <h4 class="text-dark mt-0">Sentieri incandescenti</h4>
-                        <a class="btn btn-dark btn-xl" data-bs-toggle="collapse" href="#sentieriIncandescenti" role="button" aria-expanded="false" aria-controls="sentieriIncandescenti">Scopri di pi&ugrave;!</a>
+                        <h2 class="text-dark">Il Fuoco che ci unisce</h2>
+                        <!--<hr class="divider divider-dark" />-->
+                        <!--<p class="text-dark mb-4">Ecora Network è un ecosistema di competenze composto da professionisti che si occupano di consulenza organizzativa, coaching e formazione aziendale. Siamo guidati dalla profonda convinzione che le persone esprimano il proprio valore attraverso la rete di relazioni in cui sono inserite e che l’azienda è sia un luogo privilegiato per la crescita personale e l’autorealizzazione</p>-->
+                        <h6 class="text-dark mt-4 mb-4">Conosci il simbolismo del Fuoco? È un elemento dinamico e genera trasformazioni.</h6>
+                        <button id="button-fire" class="btn" data-bs-toggle="collapse" href="#sentieriIncandescenti" aria-expanded="false" aria-controls="sentieriIncandescenti">
+                            <span id="button-fire-text">Scopri di pi&ugrave;</span>
+                        </button>
+                        <!--<a id="" class="btn btn-dark btn-xl" data-bs-toggle="collapse" href="#sentieriIncandescenti" role="button" aria-expanded="false" aria-controls="sentieriIncandescenti">Scopri di pi&ugrave;!</a>-->
                         <div class="collapse" id="sentieriIncandescenti">
-                            <p class="text-dark mb-4 mt-4">Conosci il simbolismo del Fuoco? È un elemento dinamico e genera trasformazioni. Isprirat* da metafore come questa, noi di Ecora Network adottiamo un approccio secondo il quale la Natura co-partecipa ai progetti di evoluzione organizzativa. La Natura suggerisce principi e valori fondamentali per la comprensione profonda di dinamiche e soluzioni di cui le organizzazioni hanno bisogno per affrontare la complessità odierna.</p>
-                            <a href="">Link a ecopsicologia</a>
+                            <p class="text-dark mb-4 mt-5">Noi di Ecora Network progettiamo “sentieri incandescenti”: ispirat* da metafore come questa, creiamo progetti di consulenza, coaching e formazione nei quali la Natura co-partecipa accompagnando l’evoluzione organizzativa. La Natura suggerisce principi e valori fondamentali per la comprensione profonda di dinamiche e soluzioni di cui le organizzazioni hanno bisogno per affrontare la complessità odierna e che si concretizzano nei nostri percorsi.</p>
                         </div>
                     </div>
                 </div>
@@ -73,19 +101,22 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/fire.png" class="img-fluid">-->
-                        <h2 class="text-white mt-0">Riconoscersi nei molteplici stati dell’Acqua</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75">L’acqua è simbolo di forza, fluidità, adattamento, modellamento.</p>
-                        <p class="text-white-75 mb-4">L’acqua non si ferma mai, noi possiamo incanalarla!</p>
-                        <a class="btn btn-light btn-xl" data-bs-toggle="collapse" href="#acquaCollapse" role="button" aria-expanded="false" aria-controls="acquaCollapse">Scopri di pi&ugrave;!</a>
+                        <h2 class="text-white">I molteplici stati dell’Acqua</h2>
+                        <!--<hr class="divider divider-light" />-->
+                        <h6 class="text-white-75 mt-4 mb-4">Ti riconosci nella fluidit&agrave; dell’ Acqua? L’acqua è adattamento, forza, modellamento; non si ferma mai.</h6>
+                        <!--<p class="text-white-75 mb-4">L’acqua non si ferma mai, noi possiamo incanalarla!</p>-->
+                        <button id="button-water" class="btn" data-bs-toggle="collapse" href="#acquaCollapse" aria-expanded="false" aria-controls="acquaCollapse">
+                            <span id="button-water-text">Scopri di pi&ugrave;</span>
+                        </button>
+                        <!--<a class="btn btn-light btn-xl" data-bs-toggle="collapse" href="#acquaCollapse" role="button" aria-expanded="false" aria-controls="acquaCollapse">Scopri di pi&ugrave;!</a>-->
                         <div class="collapse" id="acquaCollapse">
-                            <p class="text-white-75 mb-4 mt-4">Oggi le aziende possono agire consapevolmente per proporsi al mercato con estrema velocità, sensibilità e attenzione; dispongono di tutti gli strumenti necessari per comprendere quale sia la loro condizione e il reale impatto all’interno dell’ampio ecosistema di cui fanno parte.</p>
-                            <p class="text-white-75 mb-4">Crediamo che le persone scelgano un’organizzazione in base ad una ricerca personale maturata nel tempo Noi aiutiamo le aziende a favorire percorsi di manifestazione e affermazione dell’identità per la realizzazione concreta di ogni individuo. I valori condivisi diventano parte della quotidianità privata e lavorativa dell’intera popolazione aziendale</p>
-                            <p class="text-white-75 mb-4">Ecora Network propone il lavoro in Natura<br>
+                            <p class="text-white-75 mb-4 mt-4">Crediamo che le persone oggi scelgano un’organizzazione in base a una ricerca personale maturata nel tempo e che, viceversa, le organizzazioni vogliano persone in sintonia con la propria cultura.  Aiutiamo le aziende e le persone incanalando tutte queste energie per far scorrere l’acqua verso una meta condivisa.</p>
+                            <p class="text-white-75 mb-4">I valori fondanti diventano parte della quotidianità dell’intera popolazione aziendale, verso la realizzazione concreta di ogni individuo e dell’organizzazione stessa.</p>
+                            <!--<p class="text-white-75 mb-4">Ecora Network propone il lavoro in Natura<br>
                                 dove il confronto diventa intenso,<br>
                                 la metafora si ispira alla biomimesi e si fa reale,<br>
                                 il coinvolgimento di tutti i fattori si rivela sistemico.</p>
-                            <p class="text-white-75 mb-4">Raccogliamo e incanaliamo tutte queste energie per far scorrere l’acqua verso una meta condivisa!</p>
+                            <p class="text-white-75 mb-4">Raccogliamo e incanaliamo tutte queste energie per far scorrere l’acqua verso una meta condivisa!</p>-->
                         </div>
                     </div>
                 </div>
@@ -97,16 +128,19 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/air.png" class="img-fluid">-->
-                        <h2 class="text-dark mt-0">Aria come simbolo di comunicazione, armonia, intelligenza, conoscenza</h2>
-                        <hr class="divider divider-dark" />
-                        <p class="text-dark mb-4">Il cuore di ogni organizzazione risiede nel gruppo, un elemento vivo con bisogni, capacità e obiettivi comuni. Le aziende stesse sono organizzazioni vive che comunicano, si organizzano e agiscono sempre in base a nuove sfide.</p>
-                        <a class="btn btn-dark btn-xl" data-bs-toggle="collapse" href="#ariaCollapse" role="button" aria-expanded="false" aria-controls="ariaCollapse">Scopri di pi&ugrave;!</a>
+                        <h2 class="text-dark mt-0">L’Aria che respiriamo.</h2>
+                        <!--<hr class="divider divider-dark" />-->
+                        <h6 class="text-dark mb-4">Cosa respiri nell’aria? Comunicazione, armonia, intelligenza, conoscenza.</h6>
+                        <button id="button-air" class="btn" data-bs-toggle="collapse" href="#ariaCollapse" aria-expanded="false" aria-controls="ariaCollapse">
+                            <span id="button-air-text">Scopri di pi&ugrave;</span>
+                        </button>
+                        <!--<a class="btn btn-dark btn-xl" data-bs-toggle="collapse" href="#ariaCollapse" role="button" aria-expanded="false" aria-controls="ariaCollapse">Scopri di pi&ugrave;!</a>-->
                         <div class="collapse" id="ariaCollapse">
-                            <p class="text-dark mb-4 mt-4">Secondo la vision ecopsicologica in un sistema idealmente virtuoso gioca un ruolo fondamentale la qualità delle relazioni: il nostro obiettivo è quello di aiutare a far emergere la creazione di nuove abitudini che portino sintonia e collaborazione.</p>
+                            <p class="text-dark mb-4 mt-4">Secondo la vision ecopsicologica in un sistema virtuoso gioca un ruolo fondamentale la qualità delle relazioni, l’aria che si respira nel gruppo: il nostro obiettivo è quello di aiutare a far emergere nuove abitudini che portino coesione, sintonia e collaborazione.</p>
                             <p class="text-dark mb-4">Per i professionisti di ECORA il modello chiave risiede nella comunicazione ecologica: relazioni sane, improntate alla trasparenza, l’ascolto, il rispetto, la condivisione, la co-creazione e l’accoglienza di ogni singolo elemento.</p>
-                            <p class="text-dark mb-4">Facilitazione relazionale, comunicazione ecologica, autonomia, auto-sviluppo e auto-miglioramento. <br>Il nostro lavoro vuole stimolare soluzioni innovative e sostenibili in una spirale virtuosa attraverso un accurato lavoro custom-made progettato con il nostro cliente.</p>
+                            <!--<p class="text-dark mb-4">Facilitazione relazionale, comunicazione ecologica, autonomia, auto-sviluppo e auto-miglioramento. <br>Il nostro lavoro vuole stimolare soluzioni innovative e sostenibili in una spirale virtuosa attraverso un accurato lavoro custom-made progettato con il nostro cliente.</p>
                             <h6 class="text-dark">Cosa otterremo insieme?</h6>
-                            <p class="text-dark mb-4">Il cambiamento di paradigma degli attori del gruppo-azienda. Finalmente avranno la consapevolezza di lavorare assieme per uno scopo comune condiviso e motivante e potranno soddisfare contemporaneamente la vita lavorativa e quella personale.</p>
+                            <p class="text-dark mb-4">Il cambiamento di paradigma degli attori del gruppo-azienda. Finalmente avranno la consapevolezza di lavorare assieme per uno scopo comune condiviso e motivante e potranno soddisfare contemporaneamente la vita lavorativa e quella personale.</p>-->
                         </div>
                     </div>
                 </div>
@@ -118,13 +152,16 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/fire.png" class="img-fluid">-->
-                        <h2 class="text-dark mt-0">Una Terra fertile, solida, stabile e sicura</h2>
-                        <hr class="divider" />
-                        <p class="text-dark mb-4">Qualsiasi percorso di sviluppo e consolidamento di competenze organizzative passa attraverso un lavoro profondo su di sé e sulle proprie qualità. <br>La Crescita Personale, nel nostro approccio, è “Empowerment secondo Natura”, lasciar fiorire le proprie qualità secondo un processo analogo a quello della crescita di un seme che diventa meraviglioso albero.</p>
-                        <a class="btn btn-dark btn-xl" data-bs-toggle="collapse" href="#terraCollapse" role="button" aria-expanded="false" aria-controls="terraCollapse">Scopri di pi&ugrave;!</a>
+                        <h2 class="text-dark mt-0">Camminiamo su un terreno fertile</h2>
+                        <!--<hr class="divider" />-->
+                        <h6 class="text-dark mb-4">Vuoi seminare con noi? Ti assicuriamo una terra fertile, solida, stabile e sicura.</h6>
+                        <button id="button-earth" class="btn" data-bs-toggle="collapse" href="#terraCollapse" aria-expanded="false" aria-controls="terraCollapse">
+                            <span id="button-earth-text">Scopri di pi&ugrave;</span>
+                        </button>
+                        <!--<a class="btn btn-dark btn-xl" data-bs-toggle="collapse" href="#terraCollapse" role="button" aria-expanded="false" aria-controls="terraCollapse">Scopri di pi&ugrave;!</a>-->
                         <div class="collapse" id="terraCollapse">
-                            <p class="text-dark mb-4 mt-4">La Natura facilita e stimola la crescita tramite le sue qualità intrinseche. <br>L’essere umano, grazie agli elementi della fascinazione e dell'affiliazione, si connette agli elementi naturali che rappresentano un catalizzatore di consapevolezza, una fonte di rivelazioni importanti su quella che è la visione lucida di sé e delle proprie possibilità future.</p>
-                            <h4 class="text-dark">Conosci le fasi dei percorsi di crescita personale?</h4>
+                            <p class="text-dark mb-4 mt-4">Crediamo che qualsiasi percorso di sviluppo e consolidamento di competenze organizzative passi attraverso un lavoro profondo su di sé e sulle proprie qualità. Crescita Personale, nel nostro approccio, è “Empowerment secondo Natura”, lasciar fiorire le proprie qualità, come un seme che diventa meraviglioso albero. L’essere umano si connette agli elementi naturali che rappresentano un catalizzatore di consapevolezza e una fonte di rivelazioni importanti sulle proprie possibilità future.</p>
+                            <!--<h4 class="text-dark">Conosci le fasi dei percorsi di crescita personale?</h4>
                             <a class="btn btn-dark btn-m" data-bs-toggle="collapse" href="#terraCollapse2" role="button" aria-expanded="false" aria-controls="terraCollapse2">Scopri di pi&ugrave;!</a>
                             <div class="collapse" id="terraCollapse2">
                                 <h6 class="text-dark mt-4">La forza delle radici</h6>
@@ -147,7 +184,7 @@
                                     <li><p class="text-dark mb-2">Consolidare le qualità apprese dalla Natura: feedback loop, adattamento, co-creazione, cooperazione, rete.</p></li>
                                     <li><p class="text-dark mb-2">Sviluppare la capacità adattiva e creativa.</p></li>
                                 </ul>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -157,12 +194,14 @@
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">La nostra alchimia</h2>
-                <hr class="divider" />
+                <!--<hr class="divider" />-->
                 <div class="row gx-3 gx-lg-5">
                     <div class="col-lg-4 col-md-8 text-center">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">CONSULENZA</h3>
+                            <h3 class="h6 mb-2 hservices">
+                                <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                                CONSULENZA
+                            </h3>
                             <p class="text-muted mb-0">La consulenza che proponiamo prevede la progettazione e rielaborazione dei processi aziendali
                                 per ispirare modelli organizzativi caratterizzati dalla sinergia, ovvero dalla cooperazione e
                                 collaborazione di più elementi di una stessa realtà.
@@ -173,8 +212,10 @@
                     </div>
                     <div class="col-lg-4 col-md-8 text-center">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">FORMAZIONE</h3>
+                            <h3 class="h6 mb-2 hservices">
+                                <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                                FORMAZIONE
+                            </h3>
                             <p class="text-muted mb-0">Proponiamo percorsi esperienziali outdoor e indoor, attività per la co-costruzione degli
                                 apprendimenti, format unici e distintivi, in cui l’efficacia delle metodologie tradizionali si unisce
                                 alla creatività delle proposte ispirate agli ambienti naturali.
@@ -187,8 +228,10 @@
                     </div>
                     <div class="col-lg-4 col-md-8 text-center">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">COACHING</h3>
+                            <h3 class="h6 mb-2 hservices">
+                                <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                                COACHING
+                            </h3>
                             <p class="text-muted mb-0">Il coaching aziendale è uno strumento fondamentale per prendersi cura dello sviluppo personale
                                 e professionale dei collaboratori all'interno delle organizzazioni. Favorisce la gestione delle
                                 relazioni, aiuta a far emergere il potenziale delle persone e scatena scintille di performance. Le
