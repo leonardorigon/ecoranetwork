@@ -10839,7 +10839,7 @@ body {
 
 .page-section {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   overflow: auto;
   padding: 8rem 0;
   align-items: center;
@@ -11221,22 +11221,31 @@ header.masthead h1, header.masthead .h1 {
 .slider {
   position: relative;
   overflow: hidden;
+  //border: 5px solid purple;
 }
 
 .slider-content {
-  position: relative;
+  //position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //border: 5px solid black;
 }
 
 .slide {
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  align-items: center;
+  //top: 0;
+  //left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   transition: opacity 0.5s ease-in-out; /* Define the transition property */
+  display: flex;
+  justify-content: center;
+  //border: 5px solid yellow;
 }
 
 .slide.active {
@@ -11244,18 +11253,14 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .slide-image {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
-  overflow: hidden;
-}
-
-.slide-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  object-fit: contain;
+  //border: 5px solid red;
 }
 
 .slide-text {
