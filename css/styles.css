@@ -10839,7 +10839,7 @@ body {
 
 .page-section {
   display: flex;
-  min-height: 100vh;
+  min-height: calc(100vh / 2);
   overflow: auto;
   padding: 8rem 0;
   align-items: center;
@@ -10936,7 +10936,9 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(245, 239, 232, 0.9) 0%, rgba(245, 239, 232, 0.9) 100%), url("../assets/img/logo-masthead.png");
+  background: url("../assets/img/logo-masthead-v2.png");
+  background-color: rgb(245, 239, 232);
+  //background: linear-gradient(to bottom, rgba(245, 239, 232, 0.9) 0%, rgba(245, 239, 232, 0.9) 0%), url("../assets/img/logo-masthead-v2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10963,6 +10965,10 @@ header.masthead h1, header.masthead .h1 {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
+}
+
+.text-masthead {
+  color: #96ab43 !important;
 }
 
 .fire {
@@ -11217,8 +11223,14 @@ header.masthead h1, header.masthead .h1 {
   transform: scale(1.4);
 
 }
-
+/*
 .slider {
+  display: flex;
+  //min-height: 100vh / 2;
+  overflow: auto;
+  padding-bottom: 8rem 0;
+  align-items: center;
+  background-color: #F5EFE8;
   position: relative;
   overflow: hidden;
   //border: 5px solid purple;
@@ -11241,9 +11253,9 @@ header.masthead h1, header.masthead .h1 {
   //top: 0;
   //left: 0;
   width: 100%;
-  height: 80%;
-  transition: opacity 0.5s ease-in-out; /* Define the transition property */
-  display: flex;
+  height: 100%; */
+  /* transition: opacity 0.5s ease-in-out; /* Define the transition property */
+  /*display: flex;
   justify-content: center;
   //border: 5px solid yellow;
 }
@@ -11263,14 +11275,35 @@ header.masthead h1, header.masthead .h1 {
   //border: 5px solid red;
 }
 
-.slide-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #FFF;  /*Text color */
+.slide-text-1,
+.slide-text-2,
+.slide-text-3 {
+    position: absolute;
+    text-align: center;
+    color: #FFF; /* o il colore desiderato per il testo */
+/*}
+
+.slide-text-1 {
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.slide-text-2 {
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF; /* Cambia il colore se necessario */
+/*}
+
+.slide-text-3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; /* Cambia il colore se necessario */
+/*}
+
+/* Adatta i valori top e left secondo le tue esigenze */
 
 /* Define the animation */
 @keyframes fadeInOut {
@@ -11284,10 +11317,10 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-/* Apply the animation to the slides */
+/* Apply the animation to the slides 
 .slide {
   animation: fadeInOut 1s ease-in-out;
-}
+}*/
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;

@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
-    //slider code
+    /*slider code
     const sliderContainer = document.getElementById('slider');
     const slides = sliderContainer.querySelectorAll('.slide');
     var slideIndex = 0;
@@ -67,6 +67,7 @@ window.addEventListener('DOMContentLoaded', event => {
         slides[slideIndex].classList.add('active');
     }
 
-    setInterval(changeSlide, 10000); //change the slide every 10 seconds
+    setInterval(changeSlide, 10000); //change the slide every 10 seconds*/
+
 
 });

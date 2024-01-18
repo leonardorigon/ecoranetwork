@@ -39,48 +39,110 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-dark font-weight-bold">Ecora Network</h1>
+                        <h1 class="text-masthead font-weight-bold"><!--Ecora Network--></h1>
                         <!--<hr class="divider" />-->
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-dark mt-5">Ecora Network è un ecosistema di competenze composto da professionisti che si occupano di consulenza organizzativa, coaching e formazione aziendale. Siamo guidati dalla profonda convinzione che le persone esprimano il proprio valore attraverso la rete di relazioni in cui sono inserite e che l’azienda sia un luogo privilegiato per la crescita personale e l’autorealizzazione.</p>
+                        <p class="text-masthead mt-5"><!--Ecora Network è un ecosistema di competenze composto da professionisti che si occupano di consulenza organizzativa, coaching e formazione aziendale.<br><br> Siamo guidati dalla profonda convinzione che le persone esprimano il proprio valore attraverso la rete di relazioni in cui sono inserite e che l’azienda sia un luogo privilegiato per la crescita personale e l’autorealizzazione.--></p>
                         <!--<a class="btn btn-primary btn-xl" href="#about">Scopri di pi&ugrave;</a>-->
                     </div>
                 </div>
             </div>
         </header>
-        <section class="page-section slider" id="slider">
+        <section class="page-section">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-masthead font-weight-bold">Ecora Network</h1>
+                        <!--<hr class="divider" />-->
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-masthead mt-5">Ecora Network è un ecosistema di competenze composto da professionisti fche si occupano di consulenza organizzativa, coaching e formazione aziendale.<br><br> Siamo guidati dalla profonda convinzione che le persone esprimano il proprio valore attraverso la rete di relazioni in cui sono inserite e che l’azienda sia un luogo privilegiato per la crescita personale e l’autorealizzazione.</p>
+                        <!--<a class="btn btn-primary btn-xl" href="#about">Scopri di pi&ugrave;</a>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section class="h-100">-->
+            <div id="carosello" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carosello" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carosello" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carosello" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/img/image1.png" class="d-block w-100" alt="Water Image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: #000">In Natura tutto parla, nonostante il suo apparente silenzio</h5>
+                        <p style="color: #000">Hazrat Inayat Khan</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/img/image2.png" class="d-block w-100" alt="Earth Image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ogni cosa che puoi immaginare, la Natura l'ha già creata</h5>
+                        <p>Albert Einstein</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/img/image3.png" class="d-block w-100" alt="Forest Image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Siate attraverso le vostre azioni, l'albero sacro dei vostri valori</h5>
+                        <p>Maestro Zen</p>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carosello" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carosello" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var myCarousel = new bootstrap.Carousel(document.getElementById('carosello'), {
+                        interval: 10000, // Set the interval (in milliseconds) between slides
+                        wrap: true // Enable continuous sliding
+                    });
+                });
+            </script>
+        <!--</section>-->
+        <!--<section class="slider h-100" id="slider">
             <div class="container gx-4 gx-lg-5 justify-content-center slider-content">
                 <div class="slide active">
                     <img class="slide-image" src="./assets/img/image1.png" alt="Image 1">
-                    <div class="slide-text">
-                        <h2 class="mb-4">"In Natura tutto parla, nonostante il suo apparente silenzio"</h2>
+                    <div class="slide-text-1">
+                        <h2 class="mb-4">In Natura tutto parla, nonostante il suo apparente silenzio</h2>
                         <p>Hazrat Inayat Khan</p>
                     </div>
                 </div>
                 <div class="slide">
                     <img class="slide-image" src="./assets/img/image2.png" alt="Image 2">
-                    <div class="slide-text">
-                        <h2 class="mb-4">"Ogni cosa che puoi immaginare, la Natura l'ha già creata"</h2>
+                    <div class="slide-text-2">
+                        <h2 class="mb-4">Ogni cosa che puoi immaginare, la Natura l'ha già creata</h2>
                         <p>Albert Einstein</p>
                     </div>
                 </div>
                 <div class="slide">
                     <img class="slide-image" src="./assets/img/image3.png" alt="Image 3">
-                    <div class="slide-text text-black mt-5">
-                        <h2 class="mt-5 mb-4">"Siate attraverso le vostre azioni, l'albero sacro dei vostri valori"</h2>
+                    <div class="slide-text-3 mt-5">
+                        <h2 class="mt-5 mb-4">Siate attraverso le vostre azioni, l'albero sacro dei vostri valori</h2>
                         <p>Maestro Zen</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Fire-->
         <section class="page-section fire" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/fire.png" class="img-fluid">-->
-                        <h2 class="text-dark">Il Fuoco che ci unisce</h2>
+                        <h1 class="text-dark font-weight-bold">Il Fuoco che ci unisce</h1>
                         <!--<hr class="divider divider-dark" />-->
                         <!--<p class="text-dark mb-4">Ecora Network è un ecosistema di competenze composto da professionisti che si occupano di consulenza organizzativa, coaching e formazione aziendale. Siamo guidati dalla profonda convinzione che le persone esprimano il proprio valore attraverso la rete di relazioni in cui sono inserite e che l’azienda è sia un luogo privilegiato per la crescita personale e l’autorealizzazione</p>-->
                         <h6 class="text-dark mt-4 mb-4">Conosci il simbolismo del Fuoco?<br>È un elemento dinamico e genera trasformazioni.</h6>
@@ -101,7 +163,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/fire.png" class="img-fluid">-->
-                        <h2 class="text-white">I molteplici stati dell’Acqua</h2>
+                        <h1 class="text-white font-weight-bold">I molteplici stati dell’Acqua</h1>
                         <!--<hr class="divider divider-light" />-->
                         <h6 class="text-white-75 mt-4 mb-4">Ti riconosci nella fluidit&agrave; dell’ Acqua?<br>L’acqua è adattamento, forza, modellamento; non si ferma mai.</h6>
                         <!--<p class="text-white-75 mb-4">L’acqua non si ferma mai, noi possiamo incanalarla!</p>-->
@@ -128,7 +190,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/air.png" class="img-fluid">-->
-                        <h2 class="text-dark mt-0">L’Aria che respiriamo.</h2>
+                        <h1 class="text-dark mt-0 mb-4 font-weight-bold">L’Aria che respiriamo.</h1>
                         <!--<hr class="divider divider-dark" />-->
                         <h6 class="text-dark mb-4">Cosa respiri nell’aria?<br>Comunicazione, armonia, intelligenza, conoscenza.</h6>
                         <button id="button-air" class="btn" data-bs-toggle="collapse" href="#ariaCollapse" aria-expanded="false" aria-controls="ariaCollapse">
@@ -152,7 +214,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <!--<img src="./assets/img/fire.png" class="img-fluid">-->
-                        <h2 class="text-dark mt-0">Camminiamo su un terreno fertile</h2>
+                        <h1 class="text-dark mt-0 mb-4 font-weight-bold">Camminiamo su un terreno fertile</h1>
                         <!--<hr class="divider" />-->
                         <h6 class="text-dark mb-4">Vuoi seminare con noi?<br>Ti assicuriamo una terra fertile, solida, stabile e sicura.</h6>
                         <button id="button-earth" class="btn" data-bs-toggle="collapse" href="#terraCollapse" aria-expanded="false" aria-controls="terraCollapse">
